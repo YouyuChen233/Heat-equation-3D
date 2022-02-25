@@ -1,0 +1,22 @@
+ set term x11
+#set term epslatex color "Times-Roman" 14
+#
+#set parametric
+#set style data linespoints
+#
+ set xlabel "$x$ $\\longrightarrow$"
+ set ylabel "$y$ $\\longrightarrow$"
+#set xlabel "x -->"
+#set ylabel "y -->"
+#
+ set samples 100
+ set grid
+#
+ unset key
+#
+ plot "fort.33" using 1:5 with lines , "fort.33" using 1:6 with lines
+ pause -1 "Hit return to continue"
+ plot "fort.33" using 1:7 with lines
+ pause -1 "Hit return to continue"
+#plot "fort.33" using 1:7 with lines, "924Kn_Ergebn.d/fort.33" using 1:7 with lines, "470Kn_Ergebn.d/fort.33" using 1:7 with lines, 0.0001, -0.0001
+#pause -1 "Hit return to continue"
