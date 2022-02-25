@@ -1,0 +1,11 @@
+ set term x11
+ set grid
+#
+#plot "3D_Quader+Extrude_v2_449Kn/fort.33" u 1:7 w l, \
+#     "3D_Quader+Extrude_v2_2352Kn/fort.33" u 1:7 w l, \
+#     "3D_Quader+Extrude_v2_14162Kn/fort.33" u 1:7 w l, \
+#     "3D_Quader+Extrude_v22_22733Kn/fort.33" u 1:7 w l
+ plot "3D_Quader+Extrude_lkneq1_v2/fort.33" u 1:7 w l, \
+      "3D_Quader+Extrude_lkneq1_v3/fort.33" u 1:7 w l
+ pause -1 "Hit return"
+
